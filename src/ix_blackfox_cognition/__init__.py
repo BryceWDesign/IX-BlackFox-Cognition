@@ -5,9 +5,9 @@ evidence-bound AI-assisted engineering workflows.
 
 The current public API exports stable project metadata, dependency-light core
 types, authority models, authority firewall logic, mission models, deterministic
-mission intake, and epistemic claim-ledger models. Higher-level evidence,
-planning, memory, routing, sentinel, and handoff APIs will be exported only
-after their modules exist and are covered by tests.
+mission intake, epistemic claim-ledger models, and evidence-contract models.
+Higher-level planning, memory, routing, sentinel, and handoff APIs will be
+exported only after their modules exist and are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -53,6 +53,16 @@ from ix_blackfox_cognition.epistemics import (
     ClaimStateTransition,
     ConfidenceBasis,
     ConfidenceSignal,
+)
+from ix_blackfox_cognition.evidence import (
+    EvidenceContract,
+    EvidenceKind,
+    EvidenceReference,
+    EvidenceRequirement,
+    EvidenceSource,
+    EvidenceStrength,
+    FalsificationCondition,
+    ProofObligation,
 )
 from ix_blackfox_cognition.metadata import (
     CORE_DOCTRINE,
@@ -117,11 +127,18 @@ __all__ = [
     "ConfidenceBasis",
     "ConfidenceSignal",
     "DecisionOutcome",
+    "EvidenceContract",
     "EvidenceError",
+    "EvidenceKind",
+    "EvidenceReference",
+    "EvidenceRequirement",
+    "EvidenceSource",
     "EvidenceState",
+    "EvidenceStrength",
     "FOUNDATIONAL_LAW",
     "FailureMode",
     "FailureRecord",
+    "FalsificationCondition",
     "ForbiddenAction",
     "HumanAuthorityRequirement",
     "HumanGoal",
@@ -144,6 +161,7 @@ __all__ = [
     "PUBLIC_DESCRIPTION",
     "PackageIdentity",
     "PolicyError",
+    "ProofObligation",
     "RESEARCH_STATUS",
     "ReviewCheckpoint",
     "RiskLevel",
