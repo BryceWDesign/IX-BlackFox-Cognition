@@ -156,7 +156,7 @@ class ModelRouter:
             return candidate.role.may_review
 
         if request.purpose == RoutePurpose.HUMAN_ESCALATION:
-            return candidate.role.human_authority_role
+            return candidate.role.may_review or candidate.role.human_authority_role
 
         return False
 
