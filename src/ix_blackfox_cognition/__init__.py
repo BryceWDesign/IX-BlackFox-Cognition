@@ -7,10 +7,10 @@ The current public API exports stable project metadata, dependency-light core
 types, authority models, authority firewall logic, mission models, deterministic
 mission intake, epistemic claim-ledger models, evidence-contract models,
 belief-graph models, immutable belief-graph logic, proof-carrying plan graph
-models, conservative plan validation, cognitive work package models, and
-model-role tribunal models. Higher-level model separation logic, memory,
-sentinel, and handoff APIs will be exported only after their modules exist and
-are covered by tests.
+models, conservative plan validation, cognitive work package models,
+model-role tribunal models, and conservative model separation routing.
+Higher-level memory, sentinel, and handoff APIs will be exported only after
+their modules exist and are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -148,6 +148,11 @@ from ix_blackfox_cognition.routing import (
     ModelTribunal,
     RoutePurpose,
 )
+from ix_blackfox_cognition.routing_logic import (
+    ModelRouter,
+    RouteSeparationPolicy,
+    route_model_request,
+)
 from ix_blackfox_cognition.work_packages import (
     CognitiveWorkPackage,
     WorkPackageBatch,
@@ -233,6 +238,7 @@ __all__ = [
     "ModelRoleSpec",
     "ModelRouteDecision",
     "ModelRouteRequest",
+    "ModelRouter",
     "ModelTribunal",
     "PACKAGE_NAME",
     "PROJECT_NAME",
@@ -259,6 +265,7 @@ __all__ = [
     "RiskLevel",
     "RollbackNeed",
     "RoutePurpose",
+    "RouteSeparationPolicy",
     "SelfImprovementError",
     "StaleBeliefMarker",
     "VERSION",
@@ -273,6 +280,7 @@ __all__ = [
     "get_package_identity",
     "promote_belief",
     "require_invariant",
+    "route_model_request",
     "structure_mission",
     "validate_plan_graph",
 ]
