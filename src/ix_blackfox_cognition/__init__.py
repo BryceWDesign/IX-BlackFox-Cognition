@@ -10,9 +10,8 @@ belief-graph models, immutable belief-graph logic, proof-carrying plan graph
 models, conservative plan validation, cognitive work package models,
 model-role tribunal models, conservative model separation routing, memory
 immune-system data models, memory quarantine/promotion logic, cognitive sentinel
-checks, and BlackFox-compatible handoff protocol models. Higher-level
-self-improvement APIs will be exported only after their modules exist and are
-covered by tests.
+checks, BlackFox-compatible handoff protocol models, and self-improvement
+airlock seed models.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -188,6 +187,18 @@ from ix_blackfox_cognition.routing_logic import (
     RouteSeparationPolicy,
     route_model_request,
 )
+from ix_blackfox_cognition.self_improvement import (
+    SelfImprovementAirlock,
+    SelfImprovementAirlockPolicy,
+    SelfImprovementAirlockResult,
+    SelfImprovementDecision,
+    SelfImprovementProposal,
+    SelfImprovementProposalState,
+    SelfImprovementRisk,
+    SelfImprovementTargetKind,
+    SelfImprovementTestPlan,
+    evaluate_self_improvement,
+)
 from ix_blackfox_cognition.sentinel import (
     CognitiveArtifactSnapshot,
     CognitiveIssueKind,
@@ -342,7 +353,16 @@ __all__ = [
     "RollbackPlan",
     "RoutePurpose",
     "RouteSeparationPolicy",
+    "SelfImprovementAirlock",
+    "SelfImprovementAirlockPolicy",
+    "SelfImprovementAirlockResult",
+    "SelfImprovementDecision",
     "SelfImprovementError",
+    "SelfImprovementProposal",
+    "SelfImprovementProposalState",
+    "SelfImprovementRisk",
+    "SelfImprovementTargetKind",
+    "SelfImprovementTestPlan",
     "StaleBeliefMarker",
     "VERSION",
     "WorkPackageBatch",
@@ -353,6 +373,7 @@ __all__ = [
     "WorkState",
     "evaluate_authority_request",
     "evaluate_blackfox_handoff",
+    "evaluate_self_improvement",
     "fail_closed",
     "get_package_identity",
     "inspect_cognition",
