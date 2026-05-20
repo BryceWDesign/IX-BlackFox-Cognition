@@ -5,9 +5,10 @@ evidence-bound AI-assisted engineering workflows.
 
 The current public API exports stable project metadata, dependency-light core
 types, authority models, authority firewall logic, mission models, deterministic
-mission intake, epistemic claim-ledger models, and evidence-contract models.
-Higher-level planning, memory, routing, sentinel, and handoff APIs will be
-exported only after their modules exist and are covered by tests.
+mission intake, epistemic claim-ledger models, evidence-contract models, and
+belief-graph models. Higher-level belief promotion logic, planning, memory,
+routing, sentinel, and handoff APIs will be exported only after their modules
+exist and are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -24,6 +25,16 @@ from ix_blackfox_cognition.authority_firewall import (
     AuthorityFirewall,
     AuthorityFirewallPolicy,
     evaluate_authority_request,
+)
+from ix_blackfox_cognition.belief_graph import (
+    BeliefContradiction,
+    BeliefEdge,
+    BeliefGraph,
+    BeliefKind,
+    BeliefNode,
+    BeliefRelationKind,
+    BeliefStatus,
+    StaleBeliefMarker,
 )
 from ix_blackfox_cognition.core import (
     ActorKind,
@@ -60,6 +71,7 @@ from ix_blackfox_cognition.evidence import (
     EvidenceReference,
     EvidenceRequirement,
     EvidenceSource,
+    EvidenceState,
     EvidenceStrength,
     FalsificationCondition,
     ProofObligation,
@@ -113,6 +125,13 @@ __all__ = [
     "AuthorityLevel",
     "AuthorityRequest",
     "AuthoritySnapshot",
+    "BeliefContradiction",
+    "BeliefEdge",
+    "BeliefGraph",
+    "BeliefKind",
+    "BeliefNode",
+    "BeliefRelationKind",
+    "BeliefStatus",
     "CORE_DOCTRINE",
     "ClaimKind",
     "ClaimLedger",
@@ -167,6 +186,7 @@ __all__ = [
     "RiskLevel",
     "RollbackNeed",
     "SelfImprovementError",
+    "StaleBeliefMarker",
     "VERSION",
     "WorkState",
     "evaluate_authority_request",
