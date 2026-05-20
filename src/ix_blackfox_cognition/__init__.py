@@ -9,9 +9,9 @@ mission intake, epistemic claim-ledger models, evidence-contract models,
 belief-graph models, immutable belief-graph logic, proof-carrying plan graph
 models, conservative plan validation, cognitive work package models,
 model-role tribunal models, conservative model separation routing, memory
-immune-system data models, and memory quarantine/promotion logic. Higher-level
-sentinel and handoff APIs will be exported only after their modules exist and
-are covered by tests.
+immune-system data models, memory quarantine/promotion logic, and cognitive
+sentinel checks. Higher-level handoff APIs will be exported only after their
+modules exist and are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -174,6 +174,16 @@ from ix_blackfox_cognition.routing_logic import (
     RouteSeparationPolicy,
     route_model_request,
 )
+from ix_blackfox_cognition.sentinel import (
+    CognitiveArtifactSnapshot,
+    CognitiveIssueKind,
+    CognitiveIssueSeverity,
+    CognitiveSentinel,
+    CognitiveSentinelIssue,
+    CognitiveSentinelPolicy,
+    CognitiveSentinelReport,
+    inspect_cognition,
+)
 from ix_blackfox_cognition.work_packages import (
     CognitiveWorkPackage,
     WorkPackageBatch,
@@ -219,6 +229,13 @@ __all__ = [
     "CognitionInvariantError",
     "CognitionMemoryError",
     "CognitionPermission",
+    "CognitiveArtifactSnapshot",
+    "CognitiveIssueKind",
+    "CognitiveIssueSeverity",
+    "CognitiveSentinel",
+    "CognitiveSentinelIssue",
+    "CognitiveSentinelPolicy",
+    "CognitiveSentinelReport",
     "CognitiveWorkPackage",
     "ConfidenceBasis",
     "ConfidenceSignal",
@@ -313,6 +330,7 @@ __all__ = [
     "evaluate_authority_request",
     "fail_closed",
     "get_package_identity",
+    "inspect_cognition",
     "promote_belief",
     "promote_memory_proposal",
     "require_invariant",
