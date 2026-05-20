@@ -7,9 +7,10 @@ The current public API exports stable project metadata, dependency-light core
 types, authority models, authority firewall logic, mission models, deterministic
 mission intake, epistemic claim-ledger models, evidence-contract models,
 belief-graph models, immutable belief-graph logic, proof-carrying plan graph
-models, conservative plan validation, and cognitive work package models.
-Higher-level memory, routing, sentinel, and handoff APIs will be exported only
-after their modules exist and are covered by tests.
+models, conservative plan validation, cognitive work package models, and
+model-role tribunal models. Higher-level model separation logic, memory,
+sentinel, and handoff APIs will be exported only after their modules exist and
+are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -135,6 +136,18 @@ from ix_blackfox_cognition.planning import (
     PlanReviewTrigger,
     PlanRollbackCondition,
 )
+from ix_blackfox_cognition.routing import (
+    ModelAssignment,
+    ModelCapability,
+    ModelIdentity,
+    ModelProviderKind,
+    ModelRoleKind,
+    ModelRoleSpec,
+    ModelRouteDecision,
+    ModelRouteRequest,
+    ModelTribunal,
+    RoutePurpose,
+)
 from ix_blackfox_cognition.work_packages import (
     CognitiveWorkPackage,
     WorkPackageBatch,
@@ -212,6 +225,15 @@ __all__ = [
     "MissionIntakeResult",
     "MissionReviewTrigger",
     "MissionRisk",
+    "ModelAssignment",
+    "ModelCapability",
+    "ModelIdentity",
+    "ModelProviderKind",
+    "ModelRoleKind",
+    "ModelRoleSpec",
+    "ModelRouteDecision",
+    "ModelRouteRequest",
+    "ModelTribunal",
     "PACKAGE_NAME",
     "PROJECT_NAME",
     "PROHIBITED_CLAIMS",
@@ -236,6 +258,7 @@ __all__ = [
     "ReviewCheckpoint",
     "RiskLevel",
     "RollbackNeed",
+    "RoutePurpose",
     "SelfImprovementError",
     "StaleBeliefMarker",
     "VERSION",
