@@ -1,0 +1,106 @@
+[project]
+name = "IX-BlackFox-Cognition"
+status = "research-prototype"
+license_posture = "source-available-evaluation-only"
+commercial_use_requires_prior_written_license = true
+open_source = false
+
+[doctrine]
+core = "Model thinks -> Cognition structures -> BlackFox governs -> humans authorize -> evidence decides trust."
+foundational_law = "Do not grant trust to intelligence. Grant trust only to verified, bounded, reviewable action."
+
+[claims]
+claim_agi = false
+claim_autonomous_agi = false
+claim_self_awareness = false
+claim_production_ready = false
+claim_certified = false
+claim_government_affiliation = false
+claim_defense_affiliation = false
+claim_autonomous_authority = false
+
+[authority]
+fail_closed_on_missing_policy = true
+fail_closed_on_missing_evidence = true
+fail_closed_on_unclear_authority = true
+fail_closed_on_self_approval = true
+fail_closed_on_unknown_action_type = true
+human_authority_required_for_high_risk = true
+model_self_approval_allowed = false
+silent_state_mutation_allowed = false
+policy_bypass_allowed = false
+
+[evidence]
+model_confidence_is_evidence = false
+verified_claims_require_evidence = true
+human_approval_requires_human_source = true
+blackfox_handoff_requires_satisfied_evidence_contract = true
+falsified_evidence_blocks_trust = true
+
+[memory]
+silent_memory_mutation_allowed = false
+memory_promotion_requires_evidence_or_human_approval = true
+memory_quarantine_enabled = true
+block_circular_memory_references = true
+block_evidence_laundering = true
+block_stale_memory_as_current_truth = true
+
+[routing]
+role_separation_required = true
+same_role_self_review_allowed = false
+model_approval_allowed = false
+human_authority_role_required_for_approval = true
+high_risk_review_requires_human = true
+
+[sentinel]
+enabled = true
+block_scope_creep = true
+block_self_approval = true
+block_fake_evidence = true
+block_memory_poisoning = true
+block_policy_bypass_language = true
+block_unsafe_authority_expansion = true
+block_hallucinated_references = true
+review_unsupported_certainty = true
+review_circular_reasoning = true
+review_goal_drift = true
+review_stale_memory = true
+
+[handoff]
+cognition_executes_operational_action = false
+blackfox_handoff_required_for_risk_bearing_action = true
+handoff_requires_sentinel_pass = true
+handoff_requires_evidence_contract = true
+handoff_requires_rollback_plan = true
+handoff_requires_receipt_expectations = true
+handoff_requires_human_approval_when_high_risk = true
+
+[self_improvement]
+uncontrolled_recursive_self_modification_allowed = false
+self_promotion_allowed = false
+proposal_allowed = true
+risk_classification_required = true
+test_plan_required = true
+adversarial_scenarios_required = true
+satisfied_evidence_contract_required = true
+rollback_plan_required = true
+human_approval_required = true
+policy_file_self_promotion_allowed = false
+
+[commercial_boundary]
+viewing_allowed = true
+personal_noncommercial_evaluation_allowed = true
+commercial_use_allowed_without_license = false
+production_use_allowed_without_license = false
+hosted_service_use_allowed_without_license = false
+organizational_use_allowed_without_license = false
+contractor_use_allowed_without_license = false
+procurement_use_allowed_without_license = false
+funded_pilot_use_allowed_without_license = false
+redistribution_allowed_without_license = false
+reproduction_allowed_without_license = false
+modification_allowed_without_license = false
+derivative_use_allowed_without_license = false
+model_training_allowed_without_license = false
+model_evaluation_allowed_without_license = false
+competing_implementation_allowed_without_license = false
