@@ -6,9 +6,9 @@ evidence-bound AI-assisted engineering workflows.
 The current public API exports stable project metadata, dependency-light core
 types, authority models, authority firewall logic, mission models, deterministic
 mission intake, epistemic claim-ledger models, evidence-contract models,
-belief-graph models, and immutable belief-graph logic. Higher-level planning,
-memory, routing, sentinel, and handoff APIs will be exported only after their
-modules exist and are covered by tests.
+belief-graph models, immutable belief-graph logic, and proof-carrying plan graph
+models. Higher-level plan validation, memory, routing, sentinel, and handoff
+APIs will be exported only after their modules exist and are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -116,6 +116,16 @@ from ix_blackfox_cognition.mission_intake import (
     MissionIntakeResult,
     structure_mission,
 )
+from ix_blackfox_cognition.planning import (
+    PlanDependencyKind,
+    PlanEdge,
+    PlanGraph,
+    PlanNode,
+    PlanNodeKind,
+    PlanReviewRequirement,
+    PlanReviewTrigger,
+    PlanRollbackCondition,
+)
 
 __version__ = VERSION
 
@@ -189,6 +199,14 @@ __all__ = [
     "PROHIBITED_CLAIMS",
     "PUBLIC_DESCRIPTION",
     "PackageIdentity",
+    "PlanDependencyKind",
+    "PlanEdge",
+    "PlanGraph",
+    "PlanNode",
+    "PlanNodeKind",
+    "PlanReviewRequirement",
+    "PlanReviewTrigger",
+    "PlanRollbackCondition",
     "PolicyError",
     "ProofObligation",
     "RESEARCH_STATUS",
