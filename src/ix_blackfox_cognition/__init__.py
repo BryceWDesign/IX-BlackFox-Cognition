@@ -8,9 +8,10 @@ types, authority models, authority firewall logic, mission models, deterministic
 mission intake, epistemic claim-ledger models, evidence-contract models,
 belief-graph models, immutable belief-graph logic, proof-carrying plan graph
 models, conservative plan validation, cognitive work package models,
-model-role tribunal models, conservative model separation routing, and memory
-immune-system data models. Higher-level memory logic, sentinel, and handoff APIs
-will be exported only after their modules exist and are covered by tests.
+model-role tribunal models, conservative model separation routing, memory
+immune-system data models, and memory quarantine/promotion logic. Higher-level
+sentinel and handoff APIs will be exported only after their modules exist and
+are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -94,6 +95,15 @@ from ix_blackfox_cognition.memory import (
     MemoryStore,
     MemoryUpdateKind,
     MemoryUpdateProposal,
+)
+from ix_blackfox_cognition.memory_logic import (
+    MemoryDecision,
+    MemoryDecisionKind,
+    MemoryImmunePolicy,
+    MemoryImmuneSystem,
+    MemoryOperationResult,
+    promote_memory_proposal,
+    submit_memory_proposal,
 )
 from ix_blackfox_cognition.metadata import (
     CORE_DOCTRINE,
@@ -231,6 +241,11 @@ __all__ = [
     "LICENSE_NAME",
     "MemoryConflict",
     "MemoryConflictKind",
+    "MemoryDecision",
+    "MemoryDecisionKind",
+    "MemoryImmunePolicy",
+    "MemoryImmuneSystem",
+    "MemoryOperationResult",
     "MemoryQuarantineRecord",
     "MemoryRecord",
     "MemoryRecordKind",
@@ -299,8 +314,10 @@ __all__ = [
     "fail_closed",
     "get_package_identity",
     "promote_belief",
+    "promote_memory_proposal",
     "require_invariant",
     "route_model_request",
     "structure_mission",
+    "submit_memory_proposal",
     "validate_plan_graph",
 ]
