@@ -1,0 +1,288 @@
+IX-BlackFox-Cognition Source-Available Evaluation License v1.0
+
+Copyright (c) 2026 Bryce Lovell. All rights reserved.
+
+This license governs the IX-BlackFox-Cognition software, documentation,
+examples, configuration files, tests, project materials, workflows, generated
+artifacts, and related repository content published with this license, except
+for third-party components that are separately identified and governed by their
+own license terms.
+
+1. Purpose
+
+IX-BlackFox-Cognition is made source-available so that interested parties may
+inspect the project, review its technical structure, and perform limited
+noncommercial evaluation to decide whether to contact the copyright holder about
+a separate commercial, operational, acquisition, partnership, or production
+license.
+
+This license does not grant open-source rights. It does not grant permission for
+commercial use, production use, redistribution, reproduction, modification,
+derivative works, hosted-service use, resale, procurement use, contractor use,
+agency operational use, government operational use, model-training use, competing
+implementation use, or any use intended to generate revenue, operational
+advantage, procurement advantage, product advantage, research advantage, or
+deployed capability unless a separate written agreement is executed with Bryce
+Lovell.
+
+2. Definitions
+
+"Software" means the IX-BlackFox-Cognition source code, documentation, tests,
+examples, configuration files, workflows, policies, project artifacts, generated
+materials, architectural patterns, data schemas, and other materials included in
+this repository or any release that references this license.
+
+"You" means the individual or legal entity accessing, viewing, evaluating,
+copying, downloading, running, studying, or otherwise interacting with the
+Software.
+
+"Evaluation" means limited internal review or testing of the unmodified Software
+for the sole purpose of understanding its design, behavior, technical fit,
+technical value, safety posture, governance model, or potential value before
+contacting the copyright holder about a separate license. Evaluation does not
+include production use, commercial use, operational use, redistribution,
+reproduction, modification, integration into another product or service, resale,
+hosted-service use, model-training use, model-evaluation use, competing
+implementation use, or use for the benefit of a customer, client, program,
+contract, agency, employer, institution, investor, funder, procurement effort, or
+third party.
+
+"Commercial Use" means any use, access, testing, evaluation, integration,
+deployment, distribution, demonstration, reproduction, modification, adaptation,
+or other activity involving the Software that is connected to revenue,
+compensation, paid work, consulting, contracting, procurement, acquisition,
+product development, service delivery, resale, investment, business operations,
+competitive advantage, funded research, organizational use, institutional use,
+or work performed for or on behalf of any company, agency, contractor,
+integrator, institution, organization, customer, client, funder, or other third
+party.
+
+"Operational Use" means use of the Software, in whole or in part, to support,
+automate, influence, validate, evaluate, document, approve, monitor, test,
+control, govern, route, review, certify, assure, authorize, or operate any real
+system, workflow, product, service, program, engineering process, procurement
+process, mission, customer engagement, model pipeline, agent pipeline, autonomy
+pipeline, decision pipeline, safety process, assurance process, compliance
+process, or production-like environment.
+
+"Modification" means any change, edit, adaptation, translation, transformation,
+conversion, extension, refactor, port, merge, extraction, partial extraction,
+schema reuse, architectural reuse, implementation reuse, or other alteration of
+the Software, including creation of derivative works, competing implementations,
+substantially similar implementations, or systems that copy, adapt, reproduce,
+or operationalize the Software's protected structure, sequence, organization,
+schemas, policies, governance mechanisms, or architecture.
+
+"Model Use" means use of the Software, in whole or in part, to train, fine-tune,
+distill, benchmark, evaluate, compare, improve, align, route, operate, score,
+validate, govern, supervise, test, or deploy any artificial intelligence model,
+agent, multi-agent system, automated coding system, autonomous system,
+cognition system, decision system, assurance system, or related machine-learning
+or artificial-intelligence workflow.
+
+3. Permitted Evaluation Rights
+
+Subject to full compliance with this license, You may:
+
+(a) view and inspect the Software;
+
+(b) clone or download the Software solely for personal, noncommercial,
+non-operational evaluation;
+
+(c) run the unmodified Software locally solely for personal, noncommercial,
+non-operational evaluation; and
+
+(d) share a link to the original public repository.
+
+These permissions are limited, revocable upon breach, non-exclusive,
+non-transferable, and do not include any rights not expressly granted in this
+license.
+
+4. Prohibited Uses
+
+Without prior written permission from Bryce Lovell under a separate agreement,
+You may not:
+
+(a) use the Software for any Commercial Use;
+
+(b) use the Software for any Operational Use;
+
+(c) use the Software in production or production-like environments;
+
+(d) reproduce the Software except as strictly necessary for the limited
+evaluation rights expressly granted in Section 3;
+
+(e) modify the Software;
+
+(f) create derivative works based on the Software;
+
+(g) create, publish, deploy, sell, license, offer, fund, or operate any
+substantially similar, competing, or derivative implementation based on the
+Software;
+
+(h) redistribute, sublicense, sell, rent, lease, lend, publish, mirror, rehost,
+package, upload, transfer, or otherwise provide copies of the Software to any
+third party;
+
+(i) integrate the Software into any product, service, internal tool, hosted
+service, platform, workflow, pipeline, model pipeline, agent system, autonomy
+system, runtime, assurance process, evaluation process, compliance process,
+engineering process, procurement process, or decision process;
+
+(j) use the Software to provide consulting, contracting, implementation,
+integration, testing, evaluation, assurance, compliance, governance, audit,
+DevSecOps, developer-tooling, autonomy, AI-safety, defense, safety, engineering,
+model-evaluation, or agent-evaluation services;
+
+(k) use the Software for or on behalf of a company, agency, government entity,
+defense contractor, prime contractor, subcontractor, systems integrator,
+research institution, university, laboratory, funded program, procurement
+effort, customer, client, employer, investor, funder, or other organization;
+
+(l) use the Software for any Model Use;
+
+(m) use the Software to train, fine-tune, distill, benchmark, evaluate, compare,
+improve, align, route, operate, score, validate, govern, supervise, test, or
+deploy any model, agent, automated repair system, development tool, commercial
+product, procurement artifact, proposal, whitepaper, internal roadmap,
+competing implementation, or derivative system;
+
+(n) remove, obscure, or alter copyright, license, attribution, or restriction
+notices;
+
+(o) claim ownership of the Software or imply endorsement, sponsorship,
+affiliation, approval, certification, procurement status, production readiness,
+operational readiness, safety approval, security approval, model approval,
+government relationship, defense relationship, institutional relationship, or
+official relationship with Bryce Lovell, IX-BlackFox, or IX-BlackFox-Cognition;
+
+(p) use the Software in any way that violates applicable law, regulation,
+contractual obligation, export-control obligation, confidentiality obligation,
+employment obligation, procurement obligation, grant obligation, or third-party
+right; or
+
+(q) attempt to circumvent the intent of this license by using contractors,
+affiliates, subsidiaries, customers, vendors, integrators, partners, automated
+systems, agents, models, consultants, evaluators, or other third parties to
+perform restricted activity.
+
+5. Commercial, Operational, and Acquisition Licensing
+
+Commercial, production, hosted-service, resale, redistribution, reproduction,
+modification, derivative deployment, derivative implementation, model-training,
+model-evaluation, government operational, agency operational, defense
+contractor, systems integrator, procurement, acquisition, pilot, funded
+evaluation, organization-backed use, or any use beyond the limited evaluation
+rights in Section 3 requires prior written permission and a separate license
+agreement with Bryce Lovell.
+
+Contact path:
+
+LinkedIn: https://www.linkedin.com/in/brycewdesign/
+GitHub: https://github.com/BryceWDesign/IX-BlackFox-Cognition
+
+No commercial, operational, reproduction, modification, derivative,
+model-training, model-evaluation, procurement, acquisition, or organization-use
+rights are granted until a separate written agreement is executed.
+
+6. No Implied Rights
+
+All rights not expressly granted are reserved by Bryce Lovell. No license is
+granted by implication, estoppel, waiver, course of dealing, course of
+performance, industry practice, repository visibility, public availability, or
+otherwise.
+
+This license does not grant rights to any trade name, trademark, service mark,
+logo, project name, brand, domain name, social-media handle, design mark,
+repository name, documentation style, or other identifier associated with Bryce
+Lovell, IX-BlackFox, or IX-BlackFox-Cognition.
+
+7. Contributions
+
+This project is not accepting license-implied contributions under this license.
+Unless a separate written contribution agreement states otherwise, any submission
+of code, documentation, suggestions, issues, pull requests, feedback, examples,
+ideas, prompts, test cases, schemas, policies, architectures, model outputs, or
+other materials does not create any obligation for Bryce Lovell to use, review,
+accept, compensate, credit, or license that submission.
+
+Do not submit confidential, proprietary, export-controlled, classified,
+restricted, employer-owned, customer-owned, government-owned, contractor-owned,
+institution-owned, grant-funded, or third-party-owned information.
+
+8. No Prior Open-Source Grant
+
+IX-BlackFox-Cognition is released under this IX-BlackFox-Cognition
+Source-Available Evaluation License v1.0 unless a later written license states
+otherwise.
+
+No Apache-2.0, MIT, BSD, GPL, LGPL, AGPL, MPL, public-domain, open-source,
+free-software, or other permissive or copyleft license grant is provided unless
+a separate written license expressly states otherwise.
+
+9. Research Prototype Status
+
+The Software is a research prototype. It does not claim to be artificial general
+intelligence, autonomous AGI, self-aware, production-ready, procurement-ready,
+safety-certified, security-certified, compliance-certified, model-certified,
+operationally approved, government-approved, defense-approved, institutionally
+approved, or suitable for deployment.
+
+IX-BlackFox-Cognition is intended to explore governed cognition, evidence-bound
+planning, memory quarantine, role-separated model review, self-improvement
+proposals, BlackFox-compatible handoff, and human-authorized AI-assisted
+engineering workflows. It does not grant autonomous authority.
+
+10. No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, SECURITY, RELIABILITY, ACCURACY, COMPLETENESS, PERFORMANCE,
+AVAILABILITY, ERROR-FREE OPERATION, FITNESS FOR PRODUCTION, FITNESS FOR SAFETY,
+FITNESS FOR COMPLIANCE, FITNESS FOR PROCUREMENT, FITNESS FOR OPERATIONAL USE, OR
+FITNESS FOR MODEL, AGENT, AUTONOMY, ENGINEERING, GOVERNANCE, OR ASSURANCE USE.
+
+11. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, BRYCE LOVELL SHALL NOT BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, PUNITIVE, OR
+OTHER DAMAGES, INCLUDING WITHOUT LIMITATION LOST PROFITS, LOST REVENUE, LOST
+DATA, BUSINESS INTERRUPTION, PROCUREMENT LOSS, CONTRACT LOSS, GOODWILL LOSS,
+SECURITY INCIDENTS, SYSTEM FAILURES, OPERATIONAL FAILURES, MODEL FAILURES,
+AGENT FAILURES, GOVERNANCE FAILURES, SAFETY FAILURES, COMPLIANCE FAILURES,
+ASSURANCE FAILURES, DECISION FAILURES, OR THIRD-PARTY CLAIMS, ARISING FROM OR
+RELATED TO THE SOFTWARE OR THIS LICENSE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+12. Termination
+
+Any violation of this license automatically terminates all permissions granted
+to You under this license. Upon termination, You must immediately stop accessing,
+using, evaluating, running, copying, retaining, or interacting with the Software
+and must delete all copies in Your possession or control, except where retention
+is required by law.
+
+Termination does not limit any remedies available to Bryce Lovell.
+
+13. Governing Law and Severability
+
+This license should be interpreted to preserve the maximum restriction and
+reservation of rights permitted by applicable law. If any provision is held
+unenforceable, the remaining provisions remain in effect.
+
+14. Plain-Language Summary
+
+You may view and locally evaluate the unmodified Software for personal,
+noncommercial, non-operational review.
+
+You may not use it commercially, reproduce it beyond limited evaluation needs,
+modify it, redistribute it, deploy it, integrate it, train models with it,
+evaluate models with it, profit from it, provide services with it, use it for an
+organization, use it for government, agency, contractor, procurement, funded,
+production, or operational purposes, or create derivative or competing systems
+from it unless You first obtain written permission and a separate license from
+Bryce Lovell.
+
+The plain-language summary is provided for convenience only. The license terms
+above control.
