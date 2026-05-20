@@ -8,9 +8,9 @@ types, authority models, authority firewall logic, mission models, deterministic
 mission intake, epistemic claim-ledger models, evidence-contract models,
 belief-graph models, immutable belief-graph logic, proof-carrying plan graph
 models, conservative plan validation, cognitive work package models,
-model-role tribunal models, and conservative model separation routing.
-Higher-level memory, sentinel, and handoff APIs will be exported only after
-their modules exist and are covered by tests.
+model-role tribunal models, conservative model separation routing, and memory
+immune-system data models. Higher-level memory logic, sentinel, and handoff APIs
+will be exported only after their modules exist and are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -83,6 +83,17 @@ from ix_blackfox_cognition.evidence import (
     EvidenceStrength,
     FalsificationCondition,
     ProofObligation,
+)
+from ix_blackfox_cognition.memory import (
+    MemoryConflict,
+    MemoryConflictKind,
+    MemoryQuarantineRecord,
+    MemoryRecord,
+    MemoryRecordKind,
+    MemorySource,
+    MemoryStore,
+    MemoryUpdateKind,
+    MemoryUpdateProposal,
 )
 from ix_blackfox_cognition.metadata import (
     CORE_DOCTRINE,
@@ -218,7 +229,16 @@ __all__ = [
     "HumanAuthorityRequirement",
     "HumanGoal",
     "LICENSE_NAME",
+    "MemoryConflict",
+    "MemoryConflictKind",
+    "MemoryQuarantineRecord",
+    "MemoryRecord",
+    "MemoryRecordKind",
+    "MemorySource",
     "MemoryState",
+    "MemoryStore",
+    "MemoryUpdateKind",
+    "MemoryUpdateProposal",
     "MissionAssumption",
     "MissionAssumptionState",
     "MissionConstraint",
