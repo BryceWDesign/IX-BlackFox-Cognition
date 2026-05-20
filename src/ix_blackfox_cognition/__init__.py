@@ -4,9 +4,9 @@ IX-BlackFox-Cognition is a source-available governed cognition substrate for
 evidence-bound AI-assisted engineering workflows.
 
 The current public API exports stable project metadata, dependency-light core
-types, and authority-kernel data models. Higher-level firewall, planning,
-memory, routing, sentinel, and handoff APIs will be exported only after their
-modules exist and are covered by tests.
+types, authority-kernel data models, and fail-closed authority firewall logic.
+Higher-level planning, memory, routing, sentinel, and handoff APIs will be
+exported only after their modules exist and are covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -18,6 +18,11 @@ from ix_blackfox_cognition.authority import (
     CognitionPermission,
     ForbiddenAction,
     HumanAuthorityRequirement,
+)
+from ix_blackfox_cognition.authority_firewall import (
+    AuthorityFirewall,
+    AuthorityFirewallPolicy,
+    evaluate_authority_request,
 )
 from ix_blackfox_cognition.core import (
     ActorKind,
@@ -60,6 +65,8 @@ __all__ = [
     "AuthorityBoundary",
     "AuthorityDecisionRecord",
     "AuthorityError",
+    "AuthorityFirewall",
+    "AuthorityFirewallPolicy",
     "AuthorityLevel",
     "AuthorityRequest",
     "AuthoritySnapshot",
@@ -90,6 +97,7 @@ __all__ = [
     "SelfImprovementError",
     "VERSION",
     "WorkState",
+    "evaluate_authority_request",
     "fail_closed",
     "get_package_identity",
     "require_invariant",
