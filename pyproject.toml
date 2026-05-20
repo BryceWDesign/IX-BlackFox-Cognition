@@ -1,0 +1,101 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ix-blackfox-cognition"
+version = "0.1.0"
+description = "Source-available governed cognition substrate for evidence-bound AI-assisted engineering workflows."
+readme = { text = "IX-BlackFox-Cognition README is intentionally delivered last in the initial build sequence.", content-type = "text/plain" }
+requires-python = ">=3.11"
+license = { text = "IX-BlackFox-Cognition Source-Available Evaluation License v1.0" }
+authors = [
+  { name = "Bryce Lovell" }
+]
+keywords = [
+  "ai-governance",
+  "agent-governance",
+  "cognition",
+  "evidence",
+  "planning",
+  "human-review",
+  "memory-governance",
+  "ai-safety",
+  "software-assurance"
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: Other/Proprietary License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.8.0",
+  "mypy>=1.10.0"
+]
+
+[project.urls]
+Repository = "https://github.com/BryceWDesign/IX-BlackFox-Cognition"
+Commercial-Licensing = "https://www.linkedin.com/in/brycewdesign/"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ix_blackfox_cognition = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = [
+  "-ra",
+  "--strict-config",
+  "--strict-markers"
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+  "E",
+  "F",
+  "I",
+  "UP",
+  "B",
+  "SIM",
+  "RUF"
+]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+warn_return_any = true
+warn_unreachable = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+show_error_codes = true
+mypy_path = "src"
