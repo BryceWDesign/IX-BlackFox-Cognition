@@ -164,7 +164,7 @@ def test_unsupported_claims_contradictions_stale_memory_and_goal_drift_require_r
             stale_memory_ids=("memory:stale",),
             circular_reasoning_markers=("claim cites itself through memory",),
             goal_drift_markers=("goal moved from planning into execution",),
-            unsupported_certainty_statements=("This is proven because the model says so."),
+            unsupported_certainty_statements=("This is proven because the model says so.",),
         )
     )
 
