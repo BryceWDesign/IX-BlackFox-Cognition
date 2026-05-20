@@ -4,9 +4,10 @@ IX-BlackFox-Cognition is a source-available governed cognition substrate for
 evidence-bound AI-assisted engineering workflows.
 
 The current public API exports stable project metadata, dependency-light core
-types, authority-kernel data models, and fail-closed authority firewall logic.
-Higher-level planning, memory, routing, sentinel, and handoff APIs will be
-exported only after their modules exist and are covered by tests.
+types, authority-kernel models, authority firewall logic, and mission-envelope
+models. Higher-level mission intake, planning, memory, routing, sentinel, and
+handoff APIs will be exported only after their modules exist and are covered by
+tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -57,10 +58,24 @@ from ix_blackfox_cognition.metadata import (
     PackageIdentity,
     get_package_identity,
 )
+from ix_blackfox_cognition.mission import (
+    AcceptanceCriterion,
+    HumanGoal,
+    MissionAssumption,
+    MissionAssumptionState,
+    MissionConstraint,
+    MissionConstraintKind,
+    MissionEnvelope,
+    MissionReviewTrigger,
+    MissionRisk,
+    ReviewCheckpoint,
+    RollbackNeed,
+)
 
 __version__ = VERSION
 
 __all__ = [
+    "AcceptanceCriterion",
     "ActorKind",
     "AuthorityBoundary",
     "AuthorityDecisionRecord",
@@ -84,8 +99,16 @@ __all__ = [
     "FailureRecord",
     "ForbiddenAction",
     "HumanAuthorityRequirement",
+    "HumanGoal",
     "LICENSE_NAME",
     "MemoryState",
+    "MissionAssumption",
+    "MissionAssumptionState",
+    "MissionConstraint",
+    "MissionConstraintKind",
+    "MissionEnvelope",
+    "MissionReviewTrigger",
+    "MissionRisk",
     "PACKAGE_NAME",
     "PROJECT_NAME",
     "PROHIBITED_CLAIMS",
@@ -93,7 +116,9 @@ __all__ = [
     "PackageIdentity",
     "PolicyError",
     "RESEARCH_STATUS",
+    "ReviewCheckpoint",
     "RiskLevel",
+    "RollbackNeed",
     "SelfImprovementError",
     "VERSION",
     "WorkState",
