@@ -3,12 +3,22 @@
 IX-BlackFox-Cognition is a source-available governed cognition substrate for
 evidence-bound AI-assisted engineering workflows.
 
-The current public API exports stable project metadata and dependency-light core
-types. Higher-level governance, authority, planning, memory, routing, sentinel,
-and handoff APIs will be exported only after their modules exist and are covered
-by tests.
+The current public API exports stable project metadata, dependency-light core
+types, and authority-kernel data models. Higher-level firewall, planning,
+memory, routing, sentinel, and handoff APIs will be exported only after their
+modules exist and are covered by tests.
 """
 
+from ix_blackfox_cognition.authority import (
+    AuthorityBoundary,
+    AuthorityDecisionRecord,
+    AuthorityLevel,
+    AuthorityRequest,
+    AuthoritySnapshot,
+    CognitionPermission,
+    ForbiddenAction,
+    HumanAuthorityRequirement,
+)
 from ix_blackfox_cognition.core import (
     ActorKind,
     AuthorityError,
@@ -21,10 +31,10 @@ from ix_blackfox_cognition.core import (
     EvidenceState,
     FailureMode,
     FailureRecord,
+    MemoryState,
     PolicyError,
     RiskLevel,
     SelfImprovementError,
-    MemoryState,
     WorkState,
     fail_closed,
     require_invariant,
@@ -47,18 +57,26 @@ __version__ = VERSION
 
 __all__ = [
     "ActorKind",
+    "AuthorityBoundary",
+    "AuthorityDecisionRecord",
     "AuthorityError",
+    "AuthorityLevel",
+    "AuthorityRequest",
+    "AuthoritySnapshot",
     "CORE_DOCTRINE",
     "ClaimState",
     "CognitionError",
     "CognitionInvariantError",
     "CognitionMemoryError",
+    "CognitionPermission",
     "DecisionOutcome",
     "EvidenceError",
     "EvidenceState",
     "FOUNDATIONAL_LAW",
     "FailureMode",
     "FailureRecord",
+    "ForbiddenAction",
+    "HumanAuthorityRequirement",
     "LICENSE_NAME",
     "MemoryState",
     "PACKAGE_NAME",
