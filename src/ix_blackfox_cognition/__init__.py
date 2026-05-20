@@ -9,9 +9,10 @@ mission intake, epistemic claim-ledger models, evidence-contract models,
 belief-graph models, immutable belief-graph logic, proof-carrying plan graph
 models, conservative plan validation, cognitive work package models,
 model-role tribunal models, conservative model separation routing, memory
-immune-system data models, memory quarantine/promotion logic, and cognitive
-sentinel checks. Higher-level handoff APIs will be exported only after their
-modules exist and are covered by tests.
+immune-system data models, memory quarantine/promotion logic, cognitive sentinel
+checks, and BlackFox-compatible handoff protocol models. Higher-level
+self-improvement APIs will be exported only after their modules exist and are
+covered by tests.
 """
 
 from ix_blackfox_cognition.authority import (
@@ -84,6 +85,19 @@ from ix_blackfox_cognition.evidence import (
     EvidenceStrength,
     FalsificationCondition,
     ProofObligation,
+)
+from ix_blackfox_cognition.handoff import (
+    BlackFoxActionCandidate,
+    BlackFoxActionKind,
+    BlackFoxExecutionRequest,
+    BlackFoxHandoffDecision,
+    BlackFoxHandoffEnvelope,
+    BlackFoxHandoffGate,
+    BlackFoxHandoffResult,
+    HandoffReadiness,
+    RequiredTest,
+    RollbackPlan,
+    evaluate_blackfox_handoff,
 )
 from ix_blackfox_cognition.memory import (
     MemoryConflict,
@@ -218,6 +232,13 @@ __all__ = [
     "BeliefNode",
     "BeliefRelationKind",
     "BeliefStatus",
+    "BlackFoxActionCandidate",
+    "BlackFoxActionKind",
+    "BlackFoxExecutionRequest",
+    "BlackFoxHandoffDecision",
+    "BlackFoxHandoffEnvelope",
+    "BlackFoxHandoffGate",
+    "BlackFoxHandoffResult",
     "CORE_DOCTRINE",
     "ClaimKind",
     "ClaimLedger",
@@ -253,6 +274,7 @@ __all__ = [
     "FailureRecord",
     "FalsificationCondition",
     "ForbiddenAction",
+    "HandoffReadiness",
     "HumanAuthorityRequirement",
     "HumanGoal",
     "LICENSE_NAME",
@@ -313,9 +335,11 @@ __all__ = [
     "PolicyError",
     "ProofObligation",
     "RESEARCH_STATUS",
+    "RequiredTest",
     "ReviewCheckpoint",
     "RiskLevel",
     "RollbackNeed",
+    "RollbackPlan",
     "RoutePurpose",
     "RouteSeparationPolicy",
     "SelfImprovementError",
@@ -328,6 +352,7 @@ __all__ = [
     "WorkPackageReviewGate",
     "WorkState",
     "evaluate_authority_request",
+    "evaluate_blackfox_handoff",
     "fail_closed",
     "get_package_identity",
     "inspect_cognition",
